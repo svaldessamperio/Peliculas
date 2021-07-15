@@ -21,7 +21,9 @@ export default function MoviePoster({ movie, height = 420, width = 300 }: Props)
             style={{
                 height,
                 width,
-                marginHorizontal: 5,
+                marginHorizontal: 2,
+                paddingBottom: 20,
+                paddingHorizontal: 6,
             }}
         >
             <View style={styles.imageMoviCont}>
@@ -37,16 +39,18 @@ export default function MoviePoster({ movie, height = 420, width = 300 }: Props)
 const styles = StyleSheet.create({
     imageMoviCont: {
         flex: 1,
-        borderRadius: 18,
+        borderRadius: 20,
         shadowColor: "#000",
         shadowOffset: {
             width: 0,
-            height: 1,
+            height: 10,
         },
-        shadowOpacity: 0.18,
-        shadowRadius: 1.00,
+        shadowOpacity: 0.24,
+        shadowRadius: 7,
 
-        elevation: 1,
+        elevation: 9,
+        paddingRight:5,
+        paddingBottom:5,
     },
     imageMovie: {
         flex:1,
